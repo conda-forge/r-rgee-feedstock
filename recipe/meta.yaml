@@ -1,5 +1,4 @@
 {% set version = "1.1.4" %}
-
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -25,7 +24,6 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
-
   host:
     - r-base
     - r-r6
@@ -36,8 +34,8 @@ requirements:
     - r-leaflet >=2.0.2
     - r-magrittr
     - r-processx
-    - r-reticulate >=1.15
-
+    - r-reticulate >=1.24
+    - r-rstudioapi >=0.7
   run:
     - r-base
     - r-r6
@@ -48,7 +46,8 @@ requirements:
     - r-leaflet >=2.0.2
     - r-magrittr
     - r-processx
-    - r-reticulate >=1.15
+    - r-reticulate >=1.24
+    - r-rstudioapi >=0.7
 
 test:
   commands:
@@ -57,13 +56,12 @@ test:
 
 about:
   home: https://github.com/r-spatial/rgee/, https://r-spatial.github.io/rgee/, https://github.com/google/earthengine-api/
-
   license: Apache-2.0
   summary: Earth Engine <https://earthengine.google.com/> client library for R. All of the 'Earth Engine' API classes, modules, and functions are made available. Additional functions implemented include importing (exporting) of Earth Engine spatial objects, extraction of time series, interactive map display, assets management
     interface, and metadata display. See <https://r-spatial.github.io/rgee/> for further details.
-
   license_family: APACHE
-  license_file: LICENSE.md
+  license_file:
+    - LICENSE.md
 
 extra:
   recipe-maintainers:
