@@ -1,11 +1,11 @@
-About r-rgee
-============
+About r-rgee-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rgee-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/r-spatial/rgee/, https://r-spatial.github.io/rgee/, https://github.com/google/earthengine-api/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rgee-feedstock/blob/main/LICENSE.txt)
 
 Summary: Earth Engine <https://earthengine.google.com/> client library for R. All of the 'Earth Engine' API classes, modules, and functions are made available. Additional functions implemented include importing (exporting) of Earth Engine spatial objects, extraction of time series, interactive map display, assets management interface, and metadata display. See <https://r-spatial.github.io/rgee/> for further details.
 
