@@ -1,4 +1,4 @@
-{% set version = "1.1.7" %}
+{% set version = "1.1.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rgee_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rgee/rgee_{{ version }}.tar.gz
-  sha256: b086e14735459d0913c45fe3e0e5ddfa6f2c4bf6430c38d9f1eb0d7bfe67ddec
+  sha256: 483e0e898be52512ba925562d4a7d146afbfb0143f958d67e092fbd270f1dfa6
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
